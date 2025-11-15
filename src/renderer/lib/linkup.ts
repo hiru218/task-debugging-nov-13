@@ -32,8 +32,8 @@ export async function getAuthToken(request: LoginAttemptRequest): Promise<string
         "version": "4.7",
         "Pragma": "no-cache",
         "Cache-Control": "no-cache",
-        "Accept-Encoding": "gzip",
-        "Connection": "keep-alive",
+        //"Accept-Encoding": "gzip",
+        //"Connection": "keep-alive",
       }
     })
 
@@ -53,8 +53,8 @@ export async function getCGMData(request: GetGeneralRequest): Promise<string|nul
       "version": "4.7",
       "Pragma": "no-cache",
       "Cache-Control": "no-cache",
-      "Accept-Encoding": "gzip",
-      "Connection": "keep-alive",
+    //  "Accept-Encoding": "gzip",
+      //"Connection": "keep-alive",
       "Authorization": `Bearer ${request.token}`,
     }
 
@@ -97,8 +97,8 @@ export async function getConnection(request: GetGeneralRequest): Promise<string|
       "version": "4.7",
       "Pragma": "no-cache",
       "Cache-Control": "no-cache",
-      "Accept-Encoding": "gzip",
-      "Connection": "keep-alive",
+      //"Accept-Encoding": "gzip",
+      //"Connection": "keep-alive",
       "Authorization": `Bearer ${request.token}`,
     }
 
